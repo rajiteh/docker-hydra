@@ -8,5 +8,5 @@ ADD services/ /etc/service/
 RUN chmod -v +x /etc/service/*/run /etc/my_init.d/*.sh
 
 # Volumes and Ports
-VOLUME /config /downloads
+VOLUME /config /downloads /hydra
 EXPOSE 5075
