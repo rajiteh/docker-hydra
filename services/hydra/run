@@ -1,2 +1,3 @@
 #!/bin/bash
-/sbin/setuser abc python /config/hydra/nzbhydra.py --nobrowser
+HYDRA_RUN_PATH=/hydra
+/sbin/setuser abc python $HYDRA_RUN_PATH/nzbhydra.py --nobrowser --logfile /config/nzbhydra.log --database /config/nzbhydra.db --config /config/settings.cfg 
